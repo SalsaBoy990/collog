@@ -41,14 +41,14 @@ module.exports = function (elem) {
     console.log(bgRed + whiteBold + elem + close)
   } else if (isArray(elem)) {
     // Arrays in cyan, JSON pretty format
-    // console.log('\n' + red + '[ ' + elem.join(', ') + ' ]' + close + '\n')
-    console.log('\n' + cyan + JSON.stringify(elem, null, 2) + close + '\n')
+    // console.log(red + '[ ' + elem.join(', ') + ' ]' + close)
+    console.log(cyan + JSON.stringify(elem, null, 2) + close)
   } else if (isObject(elem)) {
     // Objects in green, JSON pretty format
-    console.log('\n' + green + JSON.stringify(elem, null, 2) + close + '\n')
+    console.log(green + JSON.stringify(elem, null, 2) + close)
   } else if (isFunction(elem)) {
     // Functions in purple
-    console.log('\n' + purple + elem.toString() + close + '\n') // get the 'code' property
+    console.log(purple + elem.toString() + close) // get the 'code' property
   } else {
     console.log('Unknown argument type')
     throw new Error('Exception: Unknown argument type')
