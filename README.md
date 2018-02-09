@@ -17,7 +17,7 @@ Function that logs its arguments in different colors based on their data type.
 ## Installation
 
 
-    `npm install collog`
+    npm install collog
 
 
 ## Usage
@@ -43,8 +43,8 @@ Function that logs its arguments in different colors based on their data type.
 ## Testing
 
 
-    `npm i`
-    `npm test`
+    npm i
+    npm test
 
 
 ## Release Notes
